@@ -1,0 +1,44 @@
+<fieldset class="field-editar-producto">
+    <legend>Ingresar nuevo producto</legend>
+    <form class="formulario" [formGroup]="formulario" >
+
+        <div class="ingreso-datos">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" formControlName="nombre" required>
+        </div>
+
+        <div class="ingreso-datos">
+            <label for="marca">Marca: </label>
+            <input type="text" id="marca" formControlName="marca" required>
+        </div>
+
+        <div class="ingreso-datos">
+            <label for="categoria">Categoria: </label>
+            <select name="categoria" id="categoria" formControlName="categoria">
+                <option value="BEBIDAS">Bebidas</option>
+                <option value="ALIMENTOS">Alimentos</option>
+                <option value="LACTEOS">Lacteos</option>
+                <option value="PANADERIA">Panaderia</option>
+                <option value="LIMPIEZA">Limpieza</option>
+                <option value="FIAMBRE">Fiambre</option>
+            </select>
+        </div>
+
+        <div class="ingreso-datos">
+            <label for="precioCosto">Precio de Costo: </label>
+            <input type="text" id="precioCosto" formControlName="precioCosto" required>
+        </div>
+
+        <div class="ingreso-datos">
+            <label for="">Porcentaje: </label>
+            <input type="radio" id="porcentaje" value="1.35" formControlName="porcentaje"> 1.35
+            <input type="radio" id="porcentaje" value="1.40" formControlName="porcentaje"> 1.40
+        </div>
+       
+        <input type="hidden" formControlName="id">
+
+        <div class="boton-guardar">
+            <input  type="submit" (click)="guardarProducto()" value="Guardar Producto">
+        </div>
+    </form>
+</fieldset>

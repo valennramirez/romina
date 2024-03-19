@@ -1,0 +1,49 @@
+.field-editar-producto
+{
+    display: flexbox;
+    width: 70%;
+    margin: 0 auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 500px;
+}
+
+.field-editar-producto legend 
+{
+    text-align: center;
+    font-weight: 600;
+    font-size:x-large;
+}
+
+.formulario div 
+{
+    margin: 50px;
+    align-items: center; 
+    
+}
+
+.formulario input
+{
+    margin-left: 20px; 
+    width: 30%;
+    height: 20px;
+
+}
+
+.boton-editar
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-editar input 
+{
+    width: 25%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#categoria 
+{
+    margin-left:20px; 
+    height: 25px;
+    width: 30%;
+}
