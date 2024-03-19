@@ -19,17 +19,17 @@ export class BuscarProductoComponent implements OnInit {
   constructor(private productoService : ProductoService, private route : ActivatedRoute){}
 
   productos : Producto[] =[]; 
-  op : string = ''; 
+  op : number = 0; 
 
   getParam ()
   {
     this.route.params.subscribe(param =>{
-      this.op= param['op']; 
+      this.op = + param['op']; 
 
       console.log(this.op); 
 
       this.productos.splice(0, this.productos.length); 
-      this.buscarProducto(this.op); 
+      this.buscarPorId(this.op); 
     })
 
   }
@@ -109,8 +109,6 @@ export class BuscarProductoComponent implements OnInit {
         console.log(err); 
       }
     })
-
-    
 
   }
   buscarPorId(id : number)

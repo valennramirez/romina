@@ -1,5 +1,21 @@
 {
-    "productos" : [
-
-    ]
+  "productos": [
+    {
+      "nombre": "VALENTINA",
+      "marca": "DON SATUR",
+      "precioCosto": "010",
+      "precioPublico": 14,
+      "id": 4,
+      "categoria": "ALIMENTOS",
+      "codigo": "1010"
+    },
+    {
+      "nombre": "VALENTINA",
+      "marca": "A",
+      "precioCosto": "07542",
+      "precioPublico": 10182,
+      "id": 2030,
+      "categoria": "FIAMBRE"
+    }
+  ]
 }

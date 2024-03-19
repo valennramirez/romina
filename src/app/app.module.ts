@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BuscarProductoComponent } from './components/producto/buscar-producto/buscar-producto.component';
 import { EditarProductoComponent } from './components/producto/editar-producto/editar-producto.component';
 import { GuardarProductoComponent } from './components/producto/guardar-producto/guardar-producto.component';
-import { ProductoComponent } from './components/producto/producto/producto.component';
 import { VisualizarProductosComponent } from './components/producto/visualizar-productos/visualizar-productos.component';
 import { AgregarProductoPageComponent } from './pages/agregar-producto-page/agregar-producto-page.component';
 import { BuscadorProductoPageComponent } from './pages/buscador-producto-page/buscador-producto-page.component';
@@ -21,7 +20,6 @@ import { BuscadorNComponent } from './shared/buscador-n/buscador-n.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductoComponent,
     VisualizarProductosComponent,
     EditarProductoComponent,
     GuardarProductoComponent,

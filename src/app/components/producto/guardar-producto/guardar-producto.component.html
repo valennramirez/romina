@@ -34,8 +34,11 @@
             <input type="radio" id="porcentaje" value="1.35" formControlName="porcentaje"> 1.35
             <input type="radio" id="porcentaje" value="1.40" formControlName="porcentaje"> 1.40
         </div>
-       
-        <input type="hidden" formControlName="id">
+
+        <div class="ingreso-datos">
+            <label for="id">Codigo: </label>
+            <input type="number" id="id" formControlName="id" required>
+        </div>
 
         <div class="boton-guardar">
             <input  type="submit" (click)="guardarProducto()" value="Guardar Producto">

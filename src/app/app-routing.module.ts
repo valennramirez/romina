@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'buscar/:op', component: BuscadorProductoPageComponent}, 
 
 
-  {path: '**', redirectTo: 'inicio/todos'}
+  {path: '**', redirectTo: 'nuevo-producto'}
 ];
 
 @NgModule({

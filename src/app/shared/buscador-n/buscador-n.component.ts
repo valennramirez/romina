@@ -12,7 +12,7 @@ export class BuscadorNComponent {
   constructor(private formBuilder : FormBuilder, private productoService : ProductoService){}
 
   buscadorform : FormGroup = this.formBuilder.group({
-    producto : ['']
+    producto : [0]
   })
 
 }

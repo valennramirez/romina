@@ -11,7 +11,7 @@ export class ProductoService {
 
   constructor(private http : HttpClient) { }
 
-  private url : string = 'http://localhost:4500/productos'; 
+  private url : string = 'http://localhost:4000/productos'; 
 
   postProducto (producto : Producto) : Observable<Producto>
   {
